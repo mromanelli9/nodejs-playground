@@ -4,7 +4,7 @@ import cors from '@koa/cors';
 import bodyParser from 'koa-bodyparser';
 import helmet from 'koa-helmet';
 import serverConfig from '../../config/server';
-import loggerMiddleware from '../../middlewares/logging';
+import loggerMiddleware from '../../modules/middlewares/logging';
 
 export default async function httpLoader(): Promise<Koa> {
   const app = new Koa();
