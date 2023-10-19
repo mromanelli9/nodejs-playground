@@ -31,7 +31,12 @@ module.exports = {
     'default-param-last': 'warn',
     'no-template-curly-in-string': 'warn',
     'node/no-unsupported-features/es-syntax': ['error', { ignores: ['modules'] }],
-    'node/no-unpublished-require': 'off',
+    'node/no-unpublished-require': [
+      'error',
+      {
+        allowModules: devDependencies,
+      },
+    ],
     'node/no-extraneous-require': 'off',
     'node/exports-style': ['error', 'module.exports'],
     'node/no-new-require': 'error',
