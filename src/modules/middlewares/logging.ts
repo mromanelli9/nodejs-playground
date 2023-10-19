@@ -1,5 +1,5 @@
 import { ParameterizedContext, Next, Middleware } from 'koa';
-import logger from '../modules/logger';
+import logger from '../logger';
 
 /**
  * Creates a middleware to perform a basic logging of API calls

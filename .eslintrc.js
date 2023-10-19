@@ -31,12 +31,7 @@ module.exports = {
     'default-param-last': 'warn',
     'no-template-curly-in-string': 'warn',
     'node/no-unsupported-features/es-syntax': ['error', { ignores: ['modules'] }],
-    'node/no-unpublished-require': [
-      'error',
-      {
-        allowModules: devDependencies,
-      },
-    ],
+    'node/no-unpublished-require': 'off',
     'node/no-extraneous-require': 'off',
     'node/exports-style': ['error', 'module.exports'],
     'node/no-new-require': 'error',
@@ -44,6 +39,12 @@ module.exports = {
     'node/no-callback-literal': 'error',
     'node/handle-callback-err': 'error',
     'node/no-missing-import': 'off',
+    'node/no-unpublished-import': [
+      'error',
+      {
+        allowModules: ['supertest'],
+      },
+    ],
     'import/no-anonymous-default-export': [
       'error',
       {
@@ -56,6 +57,7 @@ module.exports = {
         allowObject: true,
       },
     ],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'no-restricted-syntax': 'off',
     'no-plusplus': 'off',
     'no-await-in-loop': 'off',

@@ -1,6 +1,6 @@
 import request from 'supertest';
 import Koa, { Middleware, ParameterizedContext, Next } from 'koa';
-import logger from '../modules/logger';
+import logger from '../logger';
 import loggerMiddleware from './logging';
 
 // Mock the logger module
