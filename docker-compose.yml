@@ -1,0 +1,18 @@
+version: '3.3'
+
+volumes:
+  db_data: {}
+
+services:
+  db:
+    image: postgres:16
+    ports:
+      - '${DB_PORT}:5432'
+    env_file:
+      - ./.env
+    environment:
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_DATABASE}
+    volumes:
+      - db_data:/var/lib/postgresql/data

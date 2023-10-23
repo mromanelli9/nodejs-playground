@@ -7,4 +7,15 @@ export default {
     password: process.env.DB_PASSWORD as string,
     database: process.env.DB_DATABASE as string,
   },
+  pool: {
+    min: 2,
+    max: 10,
+  },
+  migrations: {
+    tableName: 'knex_migrations',
+    directory: 'src/infrastructure/database/migrations',
+  },
+  seeds: {
+    directory: 'src/infrastructure/database/seeds',
+  },
 };

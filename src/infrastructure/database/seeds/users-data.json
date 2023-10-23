@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Cedrick_Abshire60",
+      "email": "Cedrick_Abshire60@example.com",
+      "role": "admin",
+      "created_at": "2023-06-19T16:53:54.227Z"
+    },
+    {
+      "id": 2,
+      "username": "Emiliano.Mertz16",
+      "email": "Emiliano.Mertz16@example.com",
+      "role": "editor",
+      "created_at": "2023-05-03T18:52:37.130Z"
+    },
+    {
+      "id": 3,
+      "username": "Clementina45@example.com",
+      "email": "Clementina45@example.com",
+      "role": "viewer",
+      "created_at": "2023-03-10T04:11:18.085Z"
+    }
+  ]
+}
